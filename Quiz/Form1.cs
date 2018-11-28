@@ -17,5 +17,10 @@ namespace Quiz
             InitializeComponent();
         }
 
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            AdminLogin admi = new AdminLogin();
+            admi.Show();
+        }
     }
 }

@@ -73,9 +73,39 @@ namespace Quiz.Properties {
         /// <summary>
         ///   Wyszukuje zlokalizowany zasób typu System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap folder_documents_icon {
+            get {
+                object obj = ResourceManager.GetObject("folder-documents-icon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Wyszukuje zlokalizowany zasób typu System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap newquiz {
+            get {
+                object obj = ResourceManager.GetObject("newquiz", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Wyszukuje zlokalizowany zasób typu System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Office_Customer_Male_Light_icon {
             get {
                 object obj = ResourceManager.GetObject("Office-Customer-Male-Light-icon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Wyszukuje zlokalizowany zasób typu System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Student_3_icon {
+            get {
+                object obj = ResourceManager.GetObject("Student-3-icon", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

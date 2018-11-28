@@ -34,6 +34,8 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Configuration.Install" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -46,16 +48,67 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AddQuestions.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddQuestions.Designer.cs">
+      <DependentUpon>AddQuestions.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminLogin.Designer.cs">
+      <DependentUpon>AdminLogin.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Form2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2.Designer.cs">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InsertClasses.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Questions.cs" />
+    <Compile Include="QuizDataSet2.cs">
+      <DependentUpon>QuizDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="QuizDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QuizDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="returnclass.cs" />
+    <Compile Include="SetExam.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SetExam.Designer.cs">
+      <DependentUpon>SetExam.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Test.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Test.Designer.cs">
+      <DependentUpon>Test.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewClass.cs" />
+    <EmbeddedResource Include="AddQuestions.resx">
+      <DependentUpon>AddQuestions.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminLogin.resx">
+      <DependentUpon>AdminLogin.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form2.resx">
+      <DependentUpon>Form2.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -67,6 +120,12 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="SetExam.resx">
+      <DependentUpon>SetExam.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Test.resx">
+      <DependentUpon>Test.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -78,9 +137,22 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.config" />
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
   </ItemGroup>
   <ItemGroup>
+    <None Include="QuizDataSet2.xsc">
+      <DependentUpon>QuizDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="QuizDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>QuizDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="QuizDataSet2.xss">
+      <DependentUpon>QuizDataSet2.xsd</DependentUpon>
+    </None>
     <None Include="Resources\backgrounds-blank-blue-953214.jpg" />
   </ItemGroup>
   <ItemGroup>
@@ -88,6 +160,15 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\User-Group-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\folder-documents-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Student-3-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\newquiz.JPG" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
