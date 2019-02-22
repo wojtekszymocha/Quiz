@@ -48,16 +48,22 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AddQuestions.cs">
+    <Compile Include="Admin_Panel\AddStudents.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="AddQuestions.Designer.cs">
+    <Compile Include="Admin_Panel\AddStudents.Designer.cs">
+      <DependentUpon>AddStudents.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin_Panel\AddQuestions.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin_Panel\AddQuestions.Designer.cs">
       <DependentUpon>AddQuestions.cs</DependentUpon>
     </Compile>
-    <Compile Include="AdminLogin.cs">
+    <Compile Include="Admin_Panel\AdminLogin.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="AdminLogin.Designer.cs">
+    <Compile Include="Admin_Panel\AdminLogin.Designer.cs">
       <DependentUpon>AdminLogin.cs</DependentUpon>
     </Compile>
     <Compile Include="Form1.cs">
@@ -66,49 +72,78 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form2.cs">
+    <Compile Include="Admin_Panel\Form2.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form2.Designer.cs">
+    <Compile Include="Admin_Panel\Form2.Designer.cs">
       <DependentUpon>Form2.cs</DependentUpon>
     </Compile>
-    <Compile Include="InsertClasses.cs" />
+    <Compile Include="Insert\IInsertStudent.cs" />
+    <Compile Include="Insert\InsertStudent.cs" />
+    <Compile Include="Insert\IInsert_Questions.cs" />
+    <Compile Include="Insert\IInsert_Score.cs" />
+    <Compile Include="Insert\IInsert_SetExam.cs" />
+    <Compile Include="Insert\InsertClasses.cs" />
+    <Compile Include="Insert\Insert_Questions.cs" />
+    <Compile Include="Insert\Insert_Score.cs" />
+    <Compile Include="Insert\Insert_SetExam.cs" />
+    <Compile Include="Student_Panel\messageform.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Student_Panel\messageform.Designer.cs">
+      <DependentUpon>messageform.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Questions.cs" />
-    <Compile Include="QuizDataSet2.cs">
-      <DependentUpon>QuizDataSet2.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="QuizDataSet2.Designer.cs">
+    <Compile Include="Admin_Panel\Questions.cs" />
+    <Compile Include="Quiz_newDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>QuizDataSet2.xsd</DependentUpon>
+      <DependentUpon>Quiz_newDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Student_Panel\Ranking.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Student_Panel\Ranking.Designer.cs">
+      <DependentUpon>Ranking.cs</DependentUpon>
     </Compile>
     <Compile Include="returnclass.cs" />
-    <Compile Include="SetExam.cs">
+    <Compile Include="Admin_Panel\SetExam.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="SetExam.Designer.cs">
+    <Compile Include="Admin_Panel\SetExam.Designer.cs">
       <DependentUpon>SetExam.cs</DependentUpon>
     </Compile>
-    <Compile Include="Test.cs">
+    <Compile Include="Student_Panel\StudentLogin.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Test.Designer.cs">
+    <Compile Include="Student_Panel\StudentLogin.Designer.cs">
+      <DependentUpon>StudentLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Student_Panel\Test.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Student_Panel\Test.Designer.cs">
       <DependentUpon>Test.cs</DependentUpon>
     </Compile>
     <Compile Include="ViewClass.cs" />
-    <EmbeddedResource Include="AddQuestions.resx">
+    <EmbeddedResource Include="Admin_Panel\AddStudents.resx">
+      <DependentUpon>AddStudents.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin_Panel\AddQuestions.resx">
       <DependentUpon>AddQuestions.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="AdminLogin.resx">
+    <EmbeddedResource Include="Admin_Panel\AdminLogin.resx">
       <DependentUpon>AdminLogin.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form2.resx">
+    <EmbeddedResource Include="Admin_Panel\Form2.resx">
       <DependentUpon>Form2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Student_Panel\messageform.resx">
+      <DependentUpon>messageform.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -120,10 +155,16 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="SetExam.resx">
+    <EmbeddedResource Include="Student_Panel\Ranking.resx">
+      <DependentUpon>Ranking.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin_Panel\SetExam.resx">
       <DependentUpon>SetExam.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Test.resx">
+    <EmbeddedResource Include="Student_Panel\StudentLogin.resx">
+      <DependentUpon>StudentLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Student_Panel\Test.resx">
       <DependentUpon>Test.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
@@ -142,16 +183,16 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <None Include="QuizDataSet2.xsc">
-      <DependentUpon>QuizDataSet2.xsd</DependentUpon>
+    <None Include="Quiz_newDataSet.xsc">
+      <DependentUpon>Quiz_newDataSet.xsd</DependentUpon>
     </None>
-    <None Include="QuizDataSet2.xsd">
+    <None Include="Quiz_newDataSet.xsd">
       <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>QuizDataSet2.Designer.cs</LastGenOutput>
+      <LastGenOutput>Quiz_newDataSet.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </None>
-    <None Include="QuizDataSet2.xss">
-      <DependentUpon>QuizDataSet2.xsd</DependentUpon>
+    <None Include="Quiz_newDataSet.xss">
+      <DependentUpon>Quiz_newDataSet.xsd</DependentUpon>
     </None>
     <None Include="Resources\backgrounds-blank-blue-953214.jpg" />
   </ItemGroup>
@@ -170,5 +211,6 @@
   <ItemGroup>
     <None Include="Resources\newquiz.JPG" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

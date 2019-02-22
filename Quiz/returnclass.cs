@@ -9,7 +9,7 @@ using System.Configuration;
 
 namespace Quiz
 {
-    class returnclass
+    public class returnclass
     {
         private string connstring = ConfigurationManager.ConnectionStrings["quizz"].ConnectionString;
 

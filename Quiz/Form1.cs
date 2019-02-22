@@ -21,6 +21,19 @@ namespace Quiz
         {
             AdminLogin admi = new AdminLogin();
             admi.Show();
+            this.Hide();
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+            StudentLogin st_log = new StudentLogin();
+            st_log.Show();
+            this.Hide();
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
